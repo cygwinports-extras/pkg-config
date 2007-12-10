@@ -1,0 +1,74 @@
+pkg-config
+------------------------------------------
+pkg-config is a script to make putting together all the build
+flags when compiling/linking a lot easier.
+
+To use pkg-config, do something like the following in your configure.ac
+
+    PKG_CHECK_MODULES([GNOME], [gtk > 1.2.8 gnomeui >= 1.2.0])
+
+This puts the neccesary include flags to compile/link something against
+libgnomeui and all its dependencies in $(GNOME_CFLAGS), and the -L/-l flags
+for linking in $(GNOME_LIBS).
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  glib2-2.14.4-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.7-1.7.9-3
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://pkg-config.freedesktop.org/wiki/
+
+Canonical download:
+  http://pkgconfig.freedesktop.org/releases/
+
+-------------------------------------------
+
+Build instructions:
+  unpack pkg-config-0.22-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./pkg-config-0.22-X.cygport all
+
+This will create:
+  /usr/src/pkg-config-0.22-X-src.tar.bz2
+  /usr/src/pkg-config-0.22-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/pkg-config.exe
+  /usr/share/aclocal/pkg.m4
+  /usr/share/doc/pkg-config-0.22/AUTHORS
+  /usr/share/doc/pkg-config-0.22/COPYING
+  /usr/share/doc/pkg-config-0.22/ChangeLog
+  /usr/share/doc/pkg-config-0.22/INSTALL
+  /usr/share/doc/pkg-config-0.22/NEWS
+  /usr/share/doc/pkg-config-0.22/README
+  /usr/share/man/man1/pkg-config.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.22-1 -----
+Version bump.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

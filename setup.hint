@@ -1,0 +1,13 @@
+category: Devel
+requires: cygwin
+sdesc: "Package compiling configuration utility"
+ldesc: "pkg-config is a script to make putting together all the build
+flags when compiling/linking a lot easier.
+
+To use pkg-config, do something like the following in your configure.ac
+
+    PKG_CHECK_MODULES([GNOME], [gtk > 1.2.8 gnomeui >= 1.2.0])
+
+This puts the neccesary include flags to compile/link something against
+libgnomeui and all its dependencies in $(GNOME_CFLAGS), and the -L/-l flags
+for linking in $(GNOME_LIBS)."
