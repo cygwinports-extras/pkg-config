@@ -1,5 +1,0 @@
-DESCRIPTION="Package compiling configuration utility"
-HOMEPAGE="http://pkg-config.freedesktop.org/wiki/"
-SRC_URI="http://pkgconfig.freedesktop.org/releases/${P}.tar.gz"
-
-CYGCONF_ARGS="--enable-indirect-deps --with-installed-glib --with-installed-popt"

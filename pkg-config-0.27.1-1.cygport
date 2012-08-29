@@ -1,0 +1,8 @@
+CATEGORY="Devel"
+SUMMARY="Package compiling configuration utility"
+DESCRIPTION="pkg-config is a script to make putting together all the build
+flags when compiling/linking a lot easier."
+HOMEPAGE="http://pkg-config.freedesktop.org/wiki/"
+SRC_URI="http://pkgconfig.freedesktop.org/releases/${P}.tar.gz"
+
+CYGCONF_ARGS="--enable-indirect-deps"
