@@ -1,3 +1,6 @@
+NAME="pkg-config"
+VERSION=0.27.1
+RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Package compiling configuration utility"
 DESCRIPTION="pkg-config is a script to make putting together all the build
