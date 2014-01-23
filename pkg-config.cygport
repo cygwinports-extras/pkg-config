@@ -1,27 +1,11 @@
 NAME="pkg-config"
-VERSION=0.27.1
+VERSION=0.28
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Package compiling configuration utility"
 DESCRIPTION="pkg-config is a script to make putting together all the build
 flags when compiling/linking a lot easier."
 HOMEPAGE="http://pkg-config.freedesktop.org/wiki/"
-SRC_URI="http://pkgconfig.freedesktop.org/releases/${P}.tar.gz"
-PATCH_URI="glib-cygwin.patch"
+SRC_URI="http://pkgconfig.freedesktop.org/releases/${NAME}-${VERSION}.tar.gz"
 
 CYGCONF_ARGS="--enable-indirect-deps"
-
-if cross_compiling
-then
-CYGCONF_ARGS+="
-	--with-internal-glib
-	ac_cv_header_winsock2_h=no
-	ac_cv_header_mswsock2_h=no
-	ac_cv_func_posix_getgrgid_r=yes
-	ac_cv_func_posix_getpwuid_r=yes
-	glib_cv_have_strlcpy=yes
-	glib_cv_long_long_format=ll
-	glib_cv_stack_grows=no
-	glib_cv_uscore=no
-"
-fi
