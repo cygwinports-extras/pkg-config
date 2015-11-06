@@ -1,5 +1,5 @@
 NAME="pkg-config"
-VERSION=0.28
+VERSION=0.29
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Package compiling configuration utility"
@@ -7,7 +7,3 @@ DESCRIPTION="pkg-config is a script to make putting together all the build
 flags when compiling/linking a lot easier."
 HOMEPAGE="http://pkg-config.freedesktop.org/wiki/"
 SRC_URI="http://pkgconfig.freedesktop.org/releases/${NAME}-${VERSION}.tar.gz"
-# remove after 0.28
-PATCH_URI="http://pkgs.fedoraproject.org/cgit/pkgconfig.git/plain/pkg-config-man-cleanup.patch"
-
-CYGCONF_ARGS="--enable-indirect-deps"
