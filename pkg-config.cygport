@@ -1,5 +1,5 @@
 NAME="pkg-config"
-VERSION=0.29
+VERSION=0.29.1
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="Package compiling configuration utility"
